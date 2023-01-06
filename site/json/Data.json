@@ -1,0 +1,83 @@
+{
+  "galeri": [
+    {
+      "gambar": "./sukamaju/gambar5.jpg"
+    },
+    {
+      "gambar": "./sukamaju/gambar5.jpg"
+    },
+    {
+      "gambar": "./sukamaju/gambar5.jpg"
+    },
+    {
+      "gambar": "./sukamaju/gambar5.jpg"
+    },
+    {
+      "gambar": "./sukamaju/gambar5.jpg"
+    }
+  ],
+  "kkn": [
+    {
+      "gambar": "../sukamaju/kkn/poster.jpg",
+      "judul": "ini judul poster",
+      "deskripsi ": "ini adalah penjelasan poster"
+    },
+    {
+      "gambar": "../sukamaju/kkn/poster.jpg",
+      "judul": "ini judul poster",
+      "deskripsi ": "ini adalah penjelasan poster"
+    },
+    {
+      "gambar": "../sukamaju/kkn/poster.jpg",
+      "judul": "ini judul poster",
+      "deskripsi ": "ini adalah penjelasan poster"
+    },
+    {
+      "gambar": "../sukamaju/kkn/poster.jpg",
+      "judul": "ini judul poster",
+      "deskripsi ": "ini adalah penjelasan poster"
+    },
+    {
+      "gambar": "../sukamaju/kkn/poster.jpg",
+      "judul": "ini judul poster",
+      "deskripsi ": "ini adalah penjelasan poster"
+    }
+  ],
+
+  "umkm": [
+    {
+      "gambar": "../sukamaju/umkm/kosen.jpg",
+      "Nproduk": "Pintu Rumah"
+    },
+    {
+      "gambar": "../sukamaju/umkm/kosen.jpg",
+      "Nproduk": "Pintu Rumah"
+    },
+    {
+      "gambar": "../sukamaju/umkm/kosen.jpg",
+      "Nproduk": "Pintu Rumah"
+    },
+    {
+      "gambar": "../sukamaju/umkm/kosen.jpg",
+      "Nproduk": "Pintu Rumah"
+    }
+  ],
+  "tanaman": [
+    {
+      "nama": "Karet",
+      "gammbar": "../sukamaju/gambar6.jpg"
+    },
+    {
+      "nama": "Sawit",
+      "gammbar": "../sukamaju/gambar5.jpg"
+    },
+    {
+      "nama": "Padi",
+      "gammbar": "../sukamaju/sawah.jpg"
+    },
+    {
+      "nama": "Jagung",
+      "gammbar": "../sukamaju/gambar7.jpg"
+    }
+  ]
+}
