@@ -1,5 +1,280 @@
-fetch('./js/Data.json')
-.then(function (response){
-    return response.json();
-})
-.then
+const Data = "./json/Data.json";
+const dataPerangkat = document.querySelector("#perangkat");
+const dataGaleri = document.querySelector("#galeri");
+const dataDusun = document.querySelector("#dusun");
+const dataPeternakan = document.querySelector("#peternakan");
+const dataPendidikan = document.querySelector("#pendidikan");
+const dataUsaha = document.querySelector("#usaha");
+
+const getUsaha = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      console.log(responseJson.umkm);
+      dataUsaha.innerHTML = "";
+      let ush = responseJson.umkm;
+      ush.forEach((item) => {
+        dataUsaha.innerHTML += `
+        <div class="col-sm-6 col-md-12 wow fadeInRight">
+              <!-- Product Big-->
+              <article class="product-big">
+                <div
+                  class="unit flex-column flex-md-row align-items-md-stretch"
+                >
+                  <div class="unit-left">
+                    <a class="product-big-figure" href="#"
+                      ><img
+                        src="${item.gambar}"
+                        alt=""
+                        width="960"
+                        height="1280"
+                    /></a>
+                  </div>
+                  <div class="unit-body">
+                    <div class="product-big-body">
+                      <h5 class="product-big-title">
+                        <a href="#">${item.nProduk} </a>
+                      </h5>
+                      <p class="product-big-text">
+                        ${item.dProduk}
+                      </p>
+                      <a
+                        class="button button-black-outline button-ujarak"
+                        href="${item.pesan}"
+                        >Pesan Barang</a
+                      >
+                      <div class="product-big-price-wrap">
+                        <span class="product-big-price">${item.harga}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+      `;
+      });
+    });
+};
+document.addEventListener("DOMContentLoaded", getUsaha);
+
+const getPendidikan = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      // console.log(responseJson.pendidikan);
+      dataPeternakan.innerHTML = "";
+      let pdd = responseJson.pendidikan;
+      pdd.forEach((item) => {
+        dataPendidikan.innerHTML += `
+        <div class="col-sm-6 col-md-12 wow fadeInRight">
+              <!-- Product Big-->
+              <article class="product-big">
+                <div
+                  class="unit flex-column flex-md-row align-items-md-stretch"
+                >
+                  <div class="unit-left">
+                    <a class="product-big-figure" href="#"
+                      ><img
+                        src="${item.gambar} "
+                        alt=""
+                        width="960"
+                        height="1280"
+                    /></a>
+                  </div>
+                  <div class="unit-body">
+                    <div class="product-big-body">
+                      <h5 class="product-big-title">
+                        <a href="#">${item.nSekolah} </a>
+                      </h5>
+                      <p class="product-big-text">
+                        ${item.Dsekolah}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+      `;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getPendidikan);
+
+const getPeternakan = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      // console.log(responseJson.peternakan);
+      dataPeternakan.innerHTML = "";
+      let ptrn = responseJson.peternakan;
+      ptrn.forEach((item) => {
+        dataPeternakan.innerHTML += `
+      <div class="col-sm-6 col-md-12 wow fadeInRight">
+              <!-- Product Big-->
+              <article class="product-big">
+                <div
+                  class="unit flex-column flex-md-row align-items-md-stretch"
+                >
+                  <div class="unit-left">
+                    <a class="product-big-figure" href="#"
+                      ><img
+                        src="${item.gambar}"
+                        alt=""
+                        width="960"
+                        height="1280"
+                    /></a>
+                  </div>
+                  <div class="unit-body">
+                    <div class="product-big-body">
+                      <h5 class="product-big-title">
+                        <a href="#">${item.nHewan}</a>
+                      </h5>
+                      <!-- <div class="group-sm group-middle justify-content-start">
+                        
+                        
+                      </div> -->
+                      <p class="product-big-text">
+                        ${item.deskripsi}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>`;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getPeternakan);
+
+const getDusun = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      // console.log(responseJson.dusun);
+      dataDusun.innerHTML = "";
+      let dsn = responseJson.dusun;
+      dsn.forEach((item) => {
+        dataDusun.innerHTML += `
+        <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                  <ul class="list-marked-2 box-categories-list">
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="${item.gambar}"
+                          alt=""
+                          width="368"
+                          height="420"
+                      /></a>
+                      <h5 class="box-categories-title">${item.nDesa}</h5>
+                    </li>
+                  </ul>
+                </div>`;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getDusun);
+
+const getGaleri = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      // console.log(responseJson.galeri);
+      dataGaleri.innerHTML = "";
+      let glr = responseJson.galeri;
+      glr.forEach((item) => {
+        dataGaleri.innerHTML += `
+        <div class="thumbnail-mary-figure">
+            <img
+              src="${item.gambar}"
+              alt=""
+              width="270"
+              height="195"
+            />
+          </div>
+          <div class="thumbnail-mary-caption">
+            <a
+              class="icon fl-bigmug-line-zoom60"
+              href="${item.gambar}"
+              data-lightgallery="item"
+              ><img
+                src="${item.gambar}"
+                alt=""
+                width="270"
+                height="195"
+            /></a>
+          </div>
+        
+            `;
+      });
+    });
+};
+document.addEventListener("DOMContentLoaded", getGaleri);
+
+const getPerangkat = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      //   console.log(responseJson.perangkat);
+      dataPerangkat.innerHTML = "";
+      let prgkt = responseJson.perangkat;
+      prgkt.forEach((item) => {
+        dataPerangkat.innerHTML += `
+        <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header">
+                  <a class="team-modern-figure" href="#"
+                    ><img
+                      class="img-circles"
+                      src="${item.image}"
+                      alt=""
+                      width="118"
+                      height="118"
+                  /></a>
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="270px"
+                    height="70px"
+                    viewbox="0 0 270 70"
+                    enable-background="new 0 0 270 70"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        fill="#161616"d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name">
+                    <a href="#">${item.nama}</a>
+                  </h6>
+                  <p class="team-modern-status">${item.jabatan}</p>
+                  <h6 class="team-modern-phone">
+                    <a href="tel:#">${item.kontak}</a>
+                  </h6>
+                </div>
+              </article>
+            </div>`;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getPerangkat);
