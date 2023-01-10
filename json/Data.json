@@ -108,46 +108,46 @@
   ],
   "perangkat": [
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Aulia",
+      "image": "./sukamaju/kades.jpeg",
+      "nama": "Ma'ani,S.Pd",
       "jabatan": "Kepala Desa Sukamaju",
-      "kontak": "0822123455"
+      "kontak": "+62 853-0727-0085"
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Basrunki Siburian",
-      "jabatan": "Sekretaris Desa",
-      "kontak": "0822123455"
+      "image": "./sukamaju/sekdes.jpeg",
+      "nama": "Ahmad Gojali,S.Pd ",
+      "jabatan": "Sekretaris Desa Sukamaju",
+      "kontak": "+62 823-3829-0918"
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Aulia",
-      "jabatan": "Kepala Dusun 1",
-      "kontak": "0822123455"
+      "image": "./sukamaju/kadus 1.jpeg",
+      "nama": "Rosidi",
+      "jabatan": "Kepala Dusun Sukamaju ",
+      "kontak": "+62 821-8021-9900"
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Angel",
-      "jabatan": "Kepala Dusun 2",
-      "kontak": "0822123455"
+      "image": "./sukamaju/kadus 2.jpeg",
+      "nama": "Dustin",
+      "jabatan": "Kepala Dusun Way Anda",
+      "kontak": "+62 812-7492-2193"
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Aulia",
-      "jabatan": "Kepala Dusun 3",
-      "kontak": "0822123455"
+      "image": "./sukamaju/kadus 3.jpeg",
+      "nama": "Napis Kurtubi ",
+      "jabatan": "Kepala Dusun Mekar Jaya",
+      "kontak": "+62 858-9679-7362 "
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Aulia",
-      "jabatan": "Kepala Dusun 4",
-      "kontak": "0822123455"
+      "image": "./sukamaju/kadus 4.jpeg",
+      "nama": "Sehudin",
+      "jabatan": "Kepala Dusun Banjar Baru",
+      "kontak": "+62 823-7286-6974"
     },
     {
-      "image": "./sukamaju/profil.jpg",
-      "nama": "Aulia",
-      "jabatan": "Kepala Dusun 5",
-      "kontak": "0822123455"
+      "image": "./sukamaju/kadus 5.jpeg",
+      "nama": "Sumar",
+      "jabatan": "Kepala Dusun Wonosari",
+      "kontak": "+62 812-7827-8284"
     }
   ],
   "peternakan": [
@@ -178,5 +178,17 @@
       "nSekolah": "Madrasah TSanawiyah (MTS)",
       "Dsekolah": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
     }
-  ]
+  ],
+  "penduduk": [
+    {
+      "laki": "1261",
+      "perempuan": "1.169",
+      "total": "2.430",
+      "kk": "765"
+    }
+  ],
+  "kontak" : [{
+    "facebook" : "https://web.facebook.com/pemdes.sukamajuwaysulan.3",
+    "email" : ""
+  }]
 }
