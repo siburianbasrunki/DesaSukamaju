@@ -154,29 +154,29 @@
     {
       "gambar": "./sukamaju/gambar2.jpg",
       "nHewan": "Sapi",
-      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
+      "deskripsi": "-"
     },
     {
-      "gambar": "./sukamaju/gambar2.jpg",
+      "gambar": "./sukamaju/kambing.jpeg",
       "nHewan": "Kambing",
-      "deskripsi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
+      "deskripsi": "-"
     }
   ],
   "pendidikan": [
     {
       "gambar": "./sukamaju/tk.jpg",
       "nSekolah": "Taman Kanak-kanak (TK)",
-      "Dsekolah": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
+      "Dsekolah": "-"
     },
     {
       "gambar": "./sukamaju/mi.jpg",
       "nSekolah": "MI (Madrasah Ibtidaiyah)",
-      "Dsekolah": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
+      "Dsekolah": "-"
     },
     {
       "gambar": "./sukamaju/sekolah1.jpg",
       "nSekolah": "Madrasah TSanawiyah (MTS)",
-      "Dsekolah": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, mollitia laudantium."
+      "Dsekolah": "-"
     }
   ],
   "penduduk": [
