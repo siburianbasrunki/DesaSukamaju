@@ -34,8 +34,8 @@
       "judul" : "Aulia Fahmi Aziz Nasutioon_120120045"
     },
     {
-      "gambar" :"../sukamaju/kkn/Gita Etnadya_120390037.png",
-      "judul" : "Gita Etnadya_120390037"
+      "gambar" :"../sukamaju/kkn/Chandra_120240050.png",
+      "judul" : "Chandra Surya Fajar_120240050"
     }
   ],
   "dusun": [
@@ -179,15 +179,16 @@
       "laki": "1261",
       "perempuan": "1.169",
       "total": "2.430",
-      "kk": "765"
+      "kk": "765",
+      "dusun" : "5"
     }
   ],
   "kontak" : [{
     "facebook" : "https://web.facebook.com/pemdes.sukamajuwaysulan.3",
-    "instagram" : "https://instagram.com/",
+    "instagram" : "https://instagram.com/basrunki_",
     "email" : "desasukamaju@gmail.com",
     "alamat" : "Sukamaju,Kec.Way Sulan,Lampung Selatan",
-    "telepon" : "+62 823-3829-0918"
+    "telepon" : "+62 823-3829-0918 (sekretaris desa)"
 
   }]
 }

@@ -7,6 +7,60 @@ const dataPendidikan = document.querySelector("#pendidikan");
 const dataUsaha = document.querySelector("#usaha");
 const dataContact = document.querySelector("#contact");
 const dataPoster = document.querySelector("#kkn");
+const dataPenduduk = document.querySelector("#penduduk");
+
+const getPenduduk = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      console.log(responseJson.penduduk);
+      dataPenduduk.innerHTML = "";
+      let pend = responseJson.penduduk;
+      pend.forEach((item) => {
+        dataPenduduk.innerHTML += `
+        <div class="row row-50 justify-content-center border-classic">
+                <div class="col-sm-6 col-md-5 col-lg-3">
+                  <div class="counter-classic">
+                    <div class="counter-classic-number">
+                      <span class="counter">${item.dusun} </span>
+                    </div>
+                    <h5 class="counter-classic-title">Dusun</h5>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3">
+                  <div class="counter-classic">
+                    <div class="counter-classic-number">
+                      <span class="counter">${item.total}</span>
+                    </div>
+                    <h5 class="counter-classic-title">Penduduk</h5>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3">
+                  <div class="counter-classic">
+                    <div class="counter-classic-number">
+                      <span class="counter">${item.laki}</span>
+                    </div>
+                    <h5 class="counter-classic-title">Laki-laki</h5>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-3">
+                  <div class="counter-classic">
+                    <div class="counter-classic-number">
+                      <span class="counter">${item.perempuan}</span>
+                    </div>
+                    <h5 class="counter-classic-title">Perempuan</h5>
+                  </div>
+                </div>
+              </div>
+        `;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getPenduduk);
+
 
 const getPoster = () => {
   fetch(Data)
@@ -14,7 +68,6 @@ const getPoster = () => {
       return response.json();
     })
     .then((responseJson) => {
-      console.log(responseJson.kkn);
       dataPoster.innerHTML = "";
       let pos = responseJson.kkn;
       pos.forEach((item) => {
@@ -44,7 +97,7 @@ const getContact = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.kontak);
+      // k);
       dataContact.innerHTML = "";
       let knt = responseJson.kontak;
       knt.forEach((item) => {
@@ -75,7 +128,7 @@ const getContact = () => {
                             <span class="icon fa fa-envelope"></span>
                           </div>
                           <div class="unit-body">
-                            <a class="link-aemail" href="mailto:#"
+                            <a class="link-aemail" href="mailto:${item.email}"
                               >${item.email}</a
                             >
                           </div>
@@ -108,7 +161,7 @@ const getContact = () => {
               <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
                 <div>
                   <ul class="list-inline list-inline-sm footer-social-list-2">
-                    <li><a class="icon fa fa-instagram" href="${item.instagram}">Create by Basrunki/KKN ITERA 2022/2023</a></li>
+                    <li><a class="icon fa fa-instagram" href="${item.instagram}">Create by Basrunki_KKN 143 ITERA 2022/2023</a></li>
                   </ul>
                 </div>
               </div>
@@ -128,7 +181,7 @@ const getUsaha = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.umkm);
+      // ;
       dataUsaha.innerHTML = "";
       let ush = responseJson.umkm;
       ush.forEach((item) => {
@@ -181,7 +234,7 @@ const getPendidikan = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.pendidikan);
+      // dikan);
       dataPeternakan.innerHTML = "";
       let pdd = responseJson.pendidikan;
       pdd.forEach((item) => {
@@ -227,7 +280,7 @@ const getPeternakan = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.peternakan);
+      // nakan);
       dataPeternakan.innerHTML = "";
       let ptrn = responseJson.peternakan;
       ptrn.forEach((item) => {
@@ -276,7 +329,7 @@ const getDusun = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.dusun);
+      // );
       dataDusun.innerHTML = "";
       let dsn = responseJson.dusun;
       dsn.forEach((item) => {
@@ -307,7 +360,7 @@ const getGaleri = () => {
       return response.json();
     })
     .then((responseJson) => {
-      // console.log(responseJson.galeri);
+      // i);
       dataGaleri.innerHTML = "";
       let glr = responseJson.galeri;
       glr.forEach((item) => {
@@ -345,7 +398,7 @@ const getPerangkat = () => {
       return response.json();
     })
     .then((responseJson) => {
-      //   console.log(responseJson.perangkat);
+      //   gkat);
       dataPerangkat.innerHTML = "";
       let prgkt = responseJson.perangkat;
       prgkt.forEach((item) => {
