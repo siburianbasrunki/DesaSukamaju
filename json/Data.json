@@ -18,29 +18,24 @@
   ],
   "kkn": [
     {
-      "gambar": "../sukamaju/kkn/aning.jpg",
-      "judul": "ini judul poster",
-      "deskripsi ": "ini adalah penjelasan poster"
+      "gambar": "../sukamaju/kkn/Aning Sari_120150087.jpg",
+      "judul": "Aning Sari_120150087"
     },
     {
-      "gambar": "../sukamaju/kkn/aning.jpg",
-      "judul": "ini judul poster",
-      "deskripsi ": "ini adalah penjelasan poster"
+      "gambar": "../sukamaju/kkn/Aning Sari_120150087.jpg",
+      "judul": "Aning Sari_120150087"
     },
     {
-      "gambar": "../sukamaju/kkn/aning.jpg",
-      "judul": "ini judul poster",
-      "deskripsi ": "ini adalah penjelasan poster"
+      "gambar": "../sukamaju/kkn/Gita Etnadya_120390037.png",
+      "judul": "Gita Etnadya_120390037"
     },
     {
-      "gambar": "../sukamaju/kkn/aning.jpg",
-      "judul": "ini judul poster",
-      "deskripsi ": "ini adalah penjelasan poster"
+      "gambar": "../sukamaju/kkn/Harryara Pangaribuan_120370159.png",
+      "judul": "Harryara Pangaribuan_120370159"
     },
     {
-      "gambar": "../sukamaju/kkn/aning.jpg",
-      "judul": "ini judul poster",
-      "deskripsi ": "ini adalah penjelasan poster"
+      "gambar": "../sukamaju/kkn/Harryara Pangaribuan_120370159.png",
+      "judul": "Harryara Pangaribuan_120370159"
     }
   ],
   "dusun": [
@@ -67,24 +62,24 @@
   ],
   "umkm": [
     {
-      "gambar": "../sukamaju/bata2.jpg",
-      "nProduk": "Mebel",
-      "dProduk": "Benidorm is a buzzing resort with a big reputation for beach holidays. in sunn Cost Blanca, the townis one of the original Spanish beach resorts...",
-      "harga": "Rp 100.000",
+      "gambar": "../sukamaju/mebel.jpeg",
+      "nProduk": "Mebel/Panglong",
+      "dProduk": "-",
+      "harga": "Fee/Berbayar",
       "pesan": "wa.me/6282277611415"
     },
     {
       "gambar": "../sukamaju/bata2.jpg",
       "nProduk": "Batu Bata",
-      "dProduk": "Benidorm is a buzzing resort with a big reputation for beach holidays. in sunn Cost Blanca, the townis one of the original Spanish beach resorts...",
-      "harga": "Rp 100.000",
+      "dProduk": "-",
+      "harga": "Fee/Berbayar",
       "pesan": "wa.me/6282277611415"
     },
     {
-      "gambar": "../sukamaju/bata2.jpg",
+      "gambar": "../sukamaju/kwt.jpeg",
       "nProduk": "Kelompok Wanita Tani (KWT) ",
       "dProduk": "Kelompok Wanita Tani atau di singkat Kwt merupakan wadah bagi warga khususnya wanita yang memiliki background pertanian yang bertujuan untuk memberdayakan wanita dalam pertanian.",
-      "harga": "Rp 100.000",
+      "harga": "Fee/Berbayar",
       "pesan": "wa.me/6282277611415"
     }
   ],
@@ -133,15 +128,15 @@
     },
     {
       "image": "./sukamaju/kadus 3.jpeg",
-      "nama": "Napis Kurtubi ",
+      "nama": "Sehudin ",
       "jabatan": "Kepala Dusun Mekar Jaya",
-      "kontak": "+62 858-9679-7362 "
+      "kontak": " +62 823-7286-6974"
     },
     {
       "image": "./sukamaju/kadus 4.jpeg",
-      "nama": "Sehudin",
+      "nama": "Napis Kurtubi",
       "jabatan": "Kepala Dusun Banjar Baru",
-      "kontak": "+62 823-7286-6974"
+      "kontak": "+62 858-9679-7362"
     },
     {
       "image": "./sukamaju/kadus 5.jpeg",
@@ -189,6 +184,10 @@
   ],
   "kontak" : [{
     "facebook" : "https://web.facebook.com/pemdes.sukamajuwaysulan.3",
-    "email" : ""
+    "instagram" : "https://instagram.com/",
+    "email" : "desasukamaju@gmail.com",
+    "alamat" : "Sukamaju,Kec.Way Sulan,Lampung Selatan",
+    "telepon" : "+62 823-3829-0918"
+
   }]
 }

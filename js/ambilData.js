@@ -5,6 +5,122 @@ const dataDusun = document.querySelector("#dusun");
 const dataPeternakan = document.querySelector("#peternakan");
 const dataPendidikan = document.querySelector("#pendidikan");
 const dataUsaha = document.querySelector("#usaha");
+const dataContact = document.querySelector("#contact");
+const dataPoster = document.querySelector("#kkn");
+
+const getPoster = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      console.log(responseJson.kkn);
+      dataPoster.innerHTML = "";
+      let pos = responseJson.kkn;
+      pos.forEach((item) => {
+        dataPoster.innerHTML += `
+      <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
+                  <ul class="list-marked-2 box-categories-list">
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="${item.gambar}"
+                          alt=""
+                          width="368"
+                          height="420"
+                      /></a>
+                      <h5 class="box-categories-title text-black-50">${item.judul}</h5>
+                    </li>
+                  </ul>
+                </div>`;
+      });
+    });
+};
+document.addEventListener("DOMContentLoaded", getPoster);
+
+const getContact = () => {
+  fetch(Data)
+    .then((response) => {
+      return response.json();
+    })
+    .then((responseJson) => {
+      // console.log(responseJson.kontak);
+      dataContact.innerHTML = "";
+      let knt = responseJson.kontak;
+      knt.forEach((item) => {
+        dataContact.innerHTML += `
+        <div class="footer-corporate-inset">
+          <div class="container">
+            <div class="row row-40 justify-content-lg-between">
+              <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+                <div class="oh-desktop">
+                  <div class="wow slideInRight" data-wow-delay="0s">
+                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <ul class="footer-contacts d-inline-block d-sm-block">
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left">
+                            <span class="icon fa fa-phone"></span>
+                          </div>
+                          <div class="unit-body">
+                            <a class="link-phone" href="tel:#"
+                              >${item.telepon}</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left">
+                            <span class="icon fa fa-envelope"></span>
+                          </div>
+                          <div class="unit-body">
+                            <a class="link-aemail" href="mailto:#"
+                              >${item.email}</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit">
+                          <div class="unit-left">
+                            <span class="icon fa fa-location-arrow"></span>
+                          </div>
+                          <div class="unit-body">
+                            <a class="link-location" href="#"
+                              >${item.alamat}</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-corporate-bottom-panel">
+          <div class="container">
+            <div
+              class="row justfy-content-xl-space-berween row-10 align-items-md-center2"
+            >
+              <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                <div>
+                  <ul class="list-inline list-inline-sm footer-social-list-2">
+                    <li><a class="icon fa fa-instagram" href="${item.instagram}">Create by Basrunki/KKN ITERA 2022/2023</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      });
+    });
+};
+
+document.addEventListener("DOMContentLoaded", getContact);
 
 const getUsaha = () => {
   fetch(Data)
@@ -12,7 +128,7 @@ const getUsaha = () => {
       return response.json();
     })
     .then((responseJson) => {
-      console.log(responseJson.umkm);
+      // console.log(responseJson.umkm);
       dataUsaha.innerHTML = "";
       let ush = responseJson.umkm;
       ush.forEach((item) => {
@@ -43,7 +159,7 @@ const getUsaha = () => {
                       <a
                         class="button button-black-outline button-ujarak"
                         href="${item.pesan}"
-                        >Pesan Barang</a
+                        >Chat WhatsApp</a
                       >
                       <div class="product-big-price-wrap">
                         <span class="product-big-price">${item.harga}</span>
